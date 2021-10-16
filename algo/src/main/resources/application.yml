@@ -1,1 +1,11 @@
+server:
+  port: 9090
 
+
+spring:
+  jpa:
+    datasource:
+      url: jdbc:mysql://localhost:3306/capstone?serverTimezone=Asia/Seoul
+      username: root
+      password: 1234
+      initialization-mode: always  # data.sql 실행, 운영할 때는 none (초기화되면 안되므로)

@@ -45,7 +45,7 @@ public class ColorAlgorithm {
 
         // H 가 0 인 경우 -> r==g==b : 화이트 꽃 추천
         if (H == 0 && BaseS == 0) {
-            recommendColors = values.subList(7, 8);
+            recommendColors = values.subList(7, 8);  // WHITE
             return recommendColors;
         }
 
@@ -80,7 +80,7 @@ public class ColorAlgorithm {
 
         // H1, S1 or H2, S2 가 0 인 경우 <- r==g==b
         if (H1 == 0 && S1 == 0) {
-            recommendColors = values.subList(7, 8);
+            recommendColors = values.subList(7, 8);  // WHITE
         }
         else {
             int pointColorIdx = getColor((H1 + 180) % 360).ordinal();
@@ -89,7 +89,7 @@ public class ColorAlgorithm {
 
         if (H1 != H2) {  // point 색상이 서로 다른 경우
             if (H2 == 0 && S2 == 0) {
-                recommendColors = values.subList(7, 8);
+                recommendColors = values.subList(7, 8);  // WHITE
             }
             else {
                 int pointColorIdx = getColor((H2 + 180) % 360).ordinal();
